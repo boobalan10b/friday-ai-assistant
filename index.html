@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d19">
+  <title>FRIDAY — AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#"><span class="logo">F</span><span>FRIDAY<span class="muted">.AI</span></span></a>
+      <div class="status"><i></i> SYSTEM ONLINE</div>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">YOUR PERSONAL AI COMPANION</p>
+      <h1>How can I help<br><span>you today?</span></h1>
+      <p class="sub">A simple voice-enabled assistant interface. Ask a question or try a command.</p>
+    </section>
+
+    <section class="assistant-card">
+      <div class="card-head">
+        <div class="avatar">F<span></span></div>
+        <div><strong>FRIDAY Assistant</strong><small id="assistant-status">Ready when you are</small></div>
+        <span class="pill">V 2.0</span>
+      </div>
+      <div class="chat" id="chat" aria-live="polite">
+        <div class="message bot"><b>FRIDAY</b><p>Hello! I'm FRIDAY. Type a message or use the microphone to get started.</p></div>
+      </div>
+      <form id="chat-form" class="composer">
+        <input id="message-input" autocomplete="off" placeholder="Message FRIDAY..." aria-label="Message FRIDAY">
+        <button class="mic" type="button" id="mic-button" title="Use microphone" aria-label="Use microphone">🎙</button>
+        <button class="send" type="submit">Send <span>➤</span></button>
+      </form>
+      <div class="hint">Press Enter to send · Microphone support depends on your browser</div>
+    </section>
+
+    <section class="quick">
+      <button data-prompt="What can you do?">✦ What can you do?</button>
+      <button data-prompt="Give me a motivational quote">☼ Motivation</button>
+      <button data-prompt="Tell me the time">◷ Time</button>
+    </section>
+
+    <footer><span>FRIDAY AI · PERSONAL ASSISTANT</span><span>Privacy first · Demo build</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
